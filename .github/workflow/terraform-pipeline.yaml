@@ -1,0 +1,13 @@
+name: terraformInfra
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build&test:
+    runs-on: ununtu-latest
+  steps:
+  - name: checkout
+    uses: action/checkout@4
+    
